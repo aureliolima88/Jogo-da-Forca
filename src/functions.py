@@ -15,7 +15,45 @@ def desenhar_matriz(matriz_atual):
     for linha in matriz_atual:
       print(''.join(linha))
 
+def menu():
+    print(f'{'':=^20}')
+    print('JOGO DA FORCA'.center(20))
+    print(f'{'':=^20}')
+
+def campeao():
+    trofeu = r"""
+       ___________
+      '._==_==_=_.'
+      .-\:      /-.
+     | (|:.     |) |
+      '-|:.     |-'
+        \::.    /
+         '::. .'
+           ) (
+         _.' '._
+        '-------'
+"""
+    return trofeu
+
+def derrota():
+    caveira = r"""
+          ______
+       .-"      "-.
+      /            \
+     |  GAME  OVER  |
+     |,  .-.  .-.  ,|
+     | )(__/  \__)( |
+     |/     /\     \|
+     (_     ^^     _)
+      \__|IIIIII|__/
+       | \IIIIII/ |
+       J          L
+"""
+    return caveira
 
 if __name__ == '__main__':
     criar_matriz()
     desenhar_matriz()
+    menu()
+    campeao()
+    derrota()

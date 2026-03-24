@@ -1,11 +1,12 @@
 #toda estrutura do jogo
-from functions import criar_matriz, desenhar_matriz
+import functions
 import os
 
 palavra_secreta = 'Python'.upper()
 letras_secreta = []
-matriz = []
 erro = 0
+acertou = functions.campeao()
+game_over = functions.derrota()
 texto ="""
 =====
 x   |    
@@ -14,11 +15,12 @@ x
 x        
 ============
 """
-minha_matriz = criar_matriz(texto)
+minha_matriz = functions.criar_matriz(texto)
 
 while True:
-
-   desenhar_matriz(minha_matriz)
+   
+   functions.menu()
+   functions.desenhar_matriz(minha_matriz)
 
    opcao = input('digite uma letra: ').strip().upper()
    os.system('cls')
@@ -38,12 +40,12 @@ while True:
          palavra_correta += letra
       else:
          palavra_correta += '*'
-
+           
    print(palavra_correta)
-
+   
    if erro == 1:
       minha_matriz[3][4] = 'O'
-      
+
    if erro == 2:
       minha_matriz[4][3]= '/'
       
@@ -58,10 +60,12 @@ while True:
    
    if erro == 6:
       minha_matriz[5][5]= '\\'
-      desenhar_matriz(minha_matriz)
+      functions.menu()
+      print(game_over)
       print('Que pena! Você perdeu, a palavra correta é:', palavra_secreta)
       break
    if palavra_correta in palavra_secreta:
-      desenhar_matriz(minha_matriz)
+      functions.menu()
+      print(acertou)
       print('PARABÉNS! você acertou a palavra secreta')
       break

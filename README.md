@@ -44,6 +44,34 @@ O jogo permite até 6 erros antes do "Game Over":
 6.  Perna Direita (`\`)
 
 ---
+### 📸 Preview do Jogo
+
+Assim é a aparência do jogo rodando no terminal:
+
+**Início do Jogo:**
+```text
+=====
+x    |
+x
+x
+x
+==========
+digite uma letra:
+```
+**Game Over**
+```text
+******
+
+=====
+x    |
+x    O
+x   /|\
+x   / \
+==========
+Que pena! Você perdeu, a palavra correta é: PYTHON
+```
+
+---
 
 ### 🤝 Autor
 Desenvolvido por Aurélio Lima - Sinta-se à vontade para sugerir melhorias!
