@@ -18,7 +18,7 @@ palavra_chave = {
         'Farmacia': 'Vende remedio',
         'Trabalho': 'Atividade profissional',
         'Retangulo': 'Forma geometrica',
-        'Aquario': 'Focal com muitos peixes',
+        'Aquario': 'Local com muitos peixes',
         'Amolador': 'Que afia facas'
     },
     'dificil': {
@@ -30,9 +30,9 @@ palavra_chave = {
 }
 
 # Se a pasta 'data' não existir, ele cria ela automaticamente
-def criar_pasta():
-    if not CAMINHO_PASTA.exists():
-        CAMINHO_PASTA.mkdir()
+def criar_pasta(arquivo):
+    if not arquivo.exists():
+        arquivo.mkdir()
 
 #cria o arquivo em json
 def criar_arquivo():
