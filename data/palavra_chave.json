@@ -1,0 +1,22 @@
+{
+  "facil": {
+    "Mesa": "Tem quatro pernas",
+    "Livro": "Tem muitas páginas",
+    "Azul": "Cor do céu",
+    "Bola": "Usada no futebol",
+    "Pato": "Anda na água"
+  },
+  "medio": {
+    "Farmacia": "Vende remedio",
+    "Trabalho": "Atividade profissional",
+    "Retangulo": "Forma geometrica",
+    "Aquario": "Local com muitos peixes",
+    "Amolador": "Que afia facas"
+  },
+  "dificil": {
+    "jazigo": "Tumulo",
+    "Psique": "refere-se à mente humana",
+    "Xilofone": "É um instrumento musical",
+    "Bacalhau": "É um dos pilares da gastronomia portuguesa"
+  }
+}
