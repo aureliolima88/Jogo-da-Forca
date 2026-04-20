@@ -35,7 +35,6 @@ def menu():
     print('=' * 20)
     print()
 
-
 def palavra_chave(opcao):
     global dados
     dados = storage.ler_arquivo()
@@ -49,19 +48,6 @@ def dica(informacao, chave):
             dica = dados[informacao][item]
     return dica.upper()
 
-# def palavra_chave():
-#     global dados
-#     dados = storage.ler_arquivo()
-#     menu()
-#     while True:
-#         opcao = input('Digite um Nivel: ').lower().strip()
-#         if opcao.isnumeric() or opcao not in dados:
-#             print('opção invalida, tente novamente')
-#         else:
-#             nivel = choice(list(dados[opcao])) #retorna a palavras referente ao nivel escolhido
-#             os.system('cls')
-#             break
-#     return nivel.upper()
 
 if __name__ == '__main__':
     criar_matriz()

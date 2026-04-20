@@ -49,6 +49,10 @@ while True:
       print('Opção Invalida! Tente novamente.')
       continue
 
+   if opcao in letras_secreta and opcao in palavra_secreta:
+      print('Letra já encontrada, Tente Novamente!')
+      continue
+
    if opcao in palavra_secreta:
       letras_secreta.append(opcao)
    else:
